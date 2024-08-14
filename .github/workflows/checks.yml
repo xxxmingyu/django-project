@@ -15,8 +15,8 @@ jobs: # 실행 workflow management
       - name: Checkout 
         uses: actions/checkout@v2 #깃헙에 올라온 checkout actions을 불러와서 실행
       - name: Test
-        run: docker-compose run --rm app sh -c "python manage.py test" #test는 기본적으로 django에서 만들어줌
+        run: docker compose run --rm app sh -c "python manage.py test" #test는 기본적으로 django에서 만들어줌
       - name: Lint(Flake8)
-        run: docker-compose run --rm app sh -c "flake8"
+        run: docker compose run --rm app sh -c "flake8"
 # jenkins
 # github actions > 무료 (설치 필요 x)
