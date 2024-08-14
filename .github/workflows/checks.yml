@@ -1,6 +1,6 @@
 name: Checks
 
-on:[push] # trigger
+on: [push] # trigger
 
 jobs: # 실행 workflow management
   test-lint: #github에서 우리 코드를 받아와서 실행?
