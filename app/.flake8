@@ -1,0 +1,7 @@
+# flake8 : 파이썬 코드 스타일 강제 & 디버깅 도움
+[flake8]
+exclude=
+    migrations,
+    __pacache__,
+    manage.py,
+    settings.py
